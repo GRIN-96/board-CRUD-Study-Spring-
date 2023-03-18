@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class BoardService {
 
-    @Autowired  // 의존성주입(DI)
+    @Autowired  //  의존성주입(DI)
     private BoardRepository boardRepository;
 
     public void write(Board board) {
