@@ -26,7 +26,7 @@ public class BoardController {
 
 //        System.out.println("제목 : " + title);
 //        System.out.println("내용 : " + content);
-        System.out.println(board.getContent());
+//        System.out.println(board.getContent());
         boardService.write(board);
 
         return "";
