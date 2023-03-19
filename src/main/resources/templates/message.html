@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script th:inline="javascript">
+
+<!--  // [CDATA 를 사용해서 자바스크립트에서 모델에서 지정한 값 호출 실시 : 주석까지 필수 등록]  -->
+  /*<![CDATA[*/
+
+  var message = [[${message}]];
+  alert(message);
+
+  location.replace([[${searchUrl}]]);
+  <!--  페이지 이동 -->
+
+  /*]]>*/
+
+</script>
+
+</body>
+</html>

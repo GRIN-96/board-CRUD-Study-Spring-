@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- xmlns:th="http://www.thymeleaf.org" 속성 추가시 타임리프 롬복 사용가능 -->
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 리스트 페이지</title>
+</head>
+<style>
+    .layout {
+        width : 500px;
+        margin : 0 auto;
+        margin-top : 40px;
+    }
+</style>
+<body>
+
+    <div class="layout">
+        <table>
+            <thead>
+                <tr>
+                    <th>글번호</th>
+                    <th>제목</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="board : ${list}">
+                    <!-- each는 반복문을 가능케함 ! board 속 객체를 하나하나 꺼내줌 -->
+                    <td th:text="${board.id}">1</td>
+                    <td>
+                        <a th:text="${board.title}" th:href="@{/board/view(id=${board.id})}"></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <th:block th:each="page : ${#numbers.sequence(startPage, endPage)}">
+            <a th:if="${page != nowPage}" th:href="@{/board/list(page = ${page -1})}" th:text="${page}"></a>
+            <strong th:if="${page == nowPage}" th:text="${page}" style="color : red"></strong>
+        </th:block>
+    </div>
+
+</body>
+</html>
