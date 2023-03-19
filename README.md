@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Board CRUD&fontSize=60" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text='Board CRUD'&fontSize=60" />
 
 
 <div align="center">
