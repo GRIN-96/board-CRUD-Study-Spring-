@@ -57,9 +57,17 @@ public class BoardController {
     // db 내의 전체 데이터 가져와 출력하기. READ
     @GetMapping("/board/list")
     public String boardList(Model model,  // ui를 구현하는 model 객체 ( View )
-                            @PageableDefault(page = 0, size = 10, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+                            @PageableDefault(page = 0, size = 10, sort = "id", direction = Sort.Direction.DESC) Pageable pageable,
+                            String searchKeyword) {
 
-        Page<Board> list= boardService.boardList(pageable);
+        Page<Board> list = null;
+
+        if(searchKeyword == null) {  // 검색어가 없을 때 전체데이터 출력.
+            list = boardService.boardList(pageable);
+        }else {  // 검색어가 있을 때 검색기능실행.
+            list = boardService.boardSearchList(searchKeyword, pageable);
+        }
+
 
         int nowPage = list.getPageable().getPageNumber() + 1;   // 현재 페이지
         int startPage = Math.max(nowPage - 4, 1);  // 페이지 네이션에 보이는 시작 페이지
@@ -68,7 +76,7 @@ public class BoardController {
         model.addAttribute("nowPage", nowPage);
         model.addAttribute("startPage", startPage);
         model.addAttribute("endPage", endPage);
-        model.addAttribute("list", boardService.boardList(pageable));
+        model.addAttribute("list", list);
         // view에 데이터를 담아 출력할 때  model 객체를 이용하여 속성값을 담아 전달.
 
         return "boardlist";   // boardlist.html에 매핑되어 화면 출력 !
