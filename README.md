@@ -3,3 +3,5 @@
 
 # Used
 <img src="https://img.shields.io/badge/spring-6DB33F?style=flat-square&logo=Spring&logoColor=green"/> <img src="https://img.shields.io/badge/IntelliJ IDEA-000000?style=flat-square&logo=IntelliJ IDEA&logoColor=white"/>
+<img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=MariaDB&logoColor=brown"/>
+
