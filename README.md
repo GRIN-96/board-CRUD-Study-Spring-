@@ -2,5 +2,11 @@
 
 
 # Used
-<img src="https://img.shields.io/badge/spring-6DB33F?style=flat-square&logo=Spring&logoColor=green"/> <img src="https://img.shields.io/badge/IntelliJ IDEA-000000?style=flat-square&logo=IntelliJ IDEA&logoColor=white"/> <img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=MariaDB&logoColor=brown"/> <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=red"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=black"/>
+<img src="https://img.shields.io/badge/spring-6DB33F?style=flat-square&logo=Spring&logoColor=green"/> <img src="https://img.shields.io/badge/IntelliJ IDEA-000000?style=flat-square&logo=IntelliJ IDEA&logoColor=white"/> 
+<br />
+<img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=MariaDB&logoColor=brown"/> 
+<br />
+<img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=red"/> <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/>
+<br />
+<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>
 
