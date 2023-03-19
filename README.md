@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=게시판 CRUD Spring으로 구현해보기&fontSize=60" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=게시판CRUDSpring으로구현해보기&fontSize=60" />
 
 
 <div align="center">
