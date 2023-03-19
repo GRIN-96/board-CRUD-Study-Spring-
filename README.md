@@ -13,4 +13,7 @@
   <h2> Tools ⚒ </h2>
   <img src="https://img.shields.io/badge/IntelliJ IDEA-000000?style=flat-square&logo=IntelliJ IDEA&logoColor=white"/>
   <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>
+  <br/><br/><br/>
+  <p>Spring framework의 jpa를 활용하여 간단한 게시판 CRUD Study를 해 보았습니다.</p>
 </div>
+
